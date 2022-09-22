@@ -1,0 +1,689 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     21502,        681]
+NotebookOptionsPosition[     20467,        657]
+NotebookOutlinePosition[     20811,        672]
+CellTagsIndexPosition[     20768,        669]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   StyleBox[
+    SubscriptBox["\[Pi]", "8"],
+    FontSize->36], 
+   StyleBox["=",
+    FontSize->36], 
+   StyleBox[
+    RowBox[{
+     FractionBox["1", 
+      RowBox[{"Sqrt", "[", "2", "]"}]], 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{
+        FractionBox["2", "3"], "u", 
+        OverscriptBox["u", "_"]}], "+", 
+       RowBox[{
+        FractionBox["1", "3"], "d", 
+        OverscriptBox["d", "_"]}]}], ")"}]}],
+    FontSize->24]}], 
+  StyleBox[";",
+   FontSize->24]}], "\[IndentingNewLine]", 
+ StyleBox[
+  RowBox[{
+   RowBox[{
+    StyleBox[
+     SubscriptBox["\[Eta]", "8"],
+     FontSize->36], 
+    StyleBox["=",
+     FontSize->36], 
+    RowBox[{
+     StyleBox[
+      FractionBox["1", 
+       RowBox[{"Sqrt", "[", "3", "]"}]],
+      FontSize->24], 
+     RowBox[{
+      StyleBox["(",
+       FontSize->24], 
+      RowBox[{
+       RowBox[{
+        StyleBox[
+         FractionBox["2", "3"],
+         FontSize->24], "u", 
+        OverscriptBox["u", "_"]}], 
+       StyleBox["-",
+        FontSize->24], 
+       RowBox[{
+        StyleBox[
+         FractionBox["1", "3"],
+         FontSize->24], "d", 
+        OverscriptBox["d", "_"]}], 
+       StyleBox["+",
+        FontSize->24], 
+       RowBox[{
+        StyleBox["2",
+         FontSize->24], 
+        StyleBox[
+         FractionBox["1", "3"],
+         FontSize->24], 
+        StyleBox["s",
+         FontSize->24], 
+        OverscriptBox["s", "_"]}]}], 
+      StyleBox[")",
+       FontSize->24]}]}]}], 
+   StyleBox[";",
+    FontSize->24]}],
+  FontSize->24], "\[IndentingNewLine]", 
+ StyleBox[
+  RowBox[{
+   RowBox[{
+    StyleBox[
+     SubscriptBox["\[Eta]", "1"],
+     FontSize->36], 
+    StyleBox["=",
+     FontSize->36], 
+    StyleBox[
+     RowBox[{
+      FractionBox["1", 
+       RowBox[{"Sqrt", "[", "6", "]"}]], 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{
+         FractionBox["2", "3"], "u", 
+         OverscriptBox["u", "_"]}], "-", 
+        RowBox[{
+         FractionBox["1", "3"], "d", 
+         OverscriptBox["d", "_"]}], "-", 
+        RowBox[{
+         FractionBox["1", "3"], "s", 
+         OverscriptBox["s", "_"]}]}], ")"}]}],
+     FontSize->24]}], 
+   StyleBox[";",
+    FontSize->24]}],
+  FontSize->24], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   StyleBox[
+    SubscriptBox["\[CapitalTheta]", "8"],
+    FontSize->36], 
+   StyleBox[
+    StyleBox["=",
+     FontFamily->"Source Code Pro",
+     FontWeight->"SemiBold"],
+    FontSize->36], 
+   RowBox[{
+    StyleBox[
+     RowBox[{
+      RowBox[{"-", "21.2"}], "/", "180"}],
+     FontSize->36], 
+    StyleBox["\[Pi]",
+     FontSize->48]}]}], 
+  StyleBox[";",
+   FontSize->48]}], "\[IndentingNewLine]", 
+ RowBox[{
+  StyleBox[
+   RowBox[{
+    StyleBox[
+     SubscriptBox["\[CapitalTheta]", "1"],
+     FontSize->36], 
+    StyleBox[
+     StyleBox["=",
+      FontFamily->"Source Code Pro",
+      FontWeight->"SemiBold"],
+     FontSize->36], 
+    RowBox[{
+     StyleBox[
+      RowBox[{
+       RowBox[{"-", "9.2"}], "/", "180"}],
+      FontSize->36], 
+     StyleBox["\[Pi]",
+      FontSize->48]}]}],
+   FontSize->9], 
+  StyleBox[";",
+   FontSize->48]}], "\[IndentingNewLine]", 
+ RowBox[{
+  StyleBox[
+   RowBox[{
+    StyleBox["\[Eta]",
+     FontSize->36], 
+    StyleBox["=",
+     FontSize->36], 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       StyleBox["Cos",
+        FontSize->36], 
+       StyleBox["[",
+        FontSize->18], 
+       StyleBox[
+        SubscriptBox["\[CapitalTheta]", "8"],
+        FontSize->36], 
+       StyleBox["]",
+        FontSize->36]}], 
+      StyleBox[
+       SubscriptBox["\[Eta]", "8"],
+       FontSize->36]}], 
+     StyleBox["-",
+      FontSize->36], 
+     StyleBox[
+      RowBox[{
+       RowBox[{"Sin", "[", 
+        SubscriptBox["\[CapitalTheta]", "1"], "]"}], 
+       SubscriptBox["\[Eta]", "1"]}],
+      FontSize->36]}]}],
+   FontSize->24], 
+  StyleBox[";",
+   FontSize->36]}], "\[IndentingNewLine]", 
+ StyleBox[
+  RowBox[{
+   RowBox[{
+    SubscriptBox["f", "\[Pi]"], "=", "0.132"}], ";"}],
+  FontSize->24], "\[IndentingNewLine]", 
+ StyleBox[
+  RowBox[{
+   RowBox[{
+    SubscriptBox["f", "8"], "=", 
+    RowBox[{"1.26", 
+     SubscriptBox["f", "\[Pi]"]}]}], ";"}],
+  FontSize->24], "\[IndentingNewLine]", 
+ RowBox[{
+  StyleBox[
+   RowBox[{
+    RowBox[{
+     SubscriptBox["f", "1"], "=", 
+     RowBox[{"1.17", 
+      SubscriptBox["f", "\[Pi]"]}]}], ";"}],
+   FontSize->24], 
+  StyleBox["\[IndentingNewLine]",
+   FontSize->24]}], "\[IndentingNewLine]", 
+ StyleBox[
+  RowBox[{
+   RowBox[{
+    SubscriptBox["m", "u"], "=", "0.0022"}], ";"}],
+  FontSize->24], "\[IndentingNewLine]", 
+ StyleBox[
+  RowBox[{
+   RowBox[{
+    SubscriptBox["m", "d"], "=", "0.0047"}], ";"}],
+  FontSize->24], "\[IndentingNewLine]", 
+ StyleBox[
+  RowBox[{
+   RowBox[{
+    SubscriptBox["m", "s"], "=", "0.095"}], ";"}],
+  FontSize->24], "\[IndentingNewLine]", 
+ StyleBox[
+  RowBox[{
+   RowBox[{
+    SubscriptBox["m", "\[Pi]"], "=", "0.1349764"}], ";"}],
+  FontSize->24], "\[IndentingNewLine]", 
+ StyleBox[
+  RowBox[{
+   RowBox[{
+    SubscriptBox["m", "\[Eta]"], "=", "0.547853"}], ";"}],
+  FontSize->24], "\[IndentingNewLine]", 
+ StyleBox[
+  RowBox[{
+   RowBox[{
+    SubscriptBox["\[Mu]", "\[Pi]"], "=", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["m", "\[Pi]"], "^", "2"}], "/", 
+     RowBox[{"(", 
+      RowBox[{
+       SubscriptBox["m", "u"], "+", 
+       SubscriptBox["m", "d"]}], ")"}]}]}], ";"}],
+  FontSize->24], "\[IndentingNewLine]", 
+ StyleBox[
+  RowBox[{
+   RowBox[{
+    SubscriptBox["\[Mu]", "\[Eta]8"], "=", 
+    RowBox[{"3", 
+     RowBox[{
+      RowBox[{
+       SubscriptBox["m", "\[Eta]"], "^", "2"}], "/", 
+      RowBox[{"(", 
+       RowBox[{
+        SubscriptBox["m", "u"], "+", 
+        SubscriptBox["m", "d"], "+", 
+        RowBox[{"4", 
+         SubscriptBox["m", "s"]}]}], ")"}]}]}]}], ";"}],
+  FontSize->24], "\[IndentingNewLine]", 
+ RowBox[{
+  StyleBox[
+   RowBox[{
+    RowBox[{
+     SubscriptBox["\[Mu]", "\[Eta]1"], "=", "0.95778"}], ";"}],
+   FontSize->24], 
+  StyleBox["\[IndentingNewLine]",
+   FontSize->24], 
+  StyleBox["\[IndentingNewLine]",
+   FontSize->24], 
+  StyleBox["\[IndentingNewLine]",
+   FontSize->24]}], "\[IndentingNewLine]", 
+ StyleBox[
+  RowBox[{
+   RowBox[{
+    SubscriptBox["M", "\[Pi]"], "=", 
+    RowBox[{
+     SubscriptBox["f", "\[Pi]"], 
+     SubscriptBox["\[Mu]", "\[Pi]"]}]}], ";"}],
+  FontSize->24], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   StyleBox[
+    SubscriptBox["M", "\[Eta]"],
+    FontSize->36], 
+   StyleBox["=",
+    FontSize->36], 
+   StyleBox[
+    RowBox[{
+     RowBox[{
+      RowBox[{"Cos", "[", 
+       SubscriptBox["\[CapitalTheta]", "8"], "]"}], 
+      RowBox[{
+       SubscriptBox["f", "8"], 
+       SubscriptBox["\[Mu]", "\[Eta]8"]}]}], "-", 
+     RowBox[{
+      RowBox[{"Sqrt", "[", "2.", "]"}], 
+      RowBox[{"Sin", "[", 
+       SubscriptBox["\[CapitalTheta]", "1"], "]"}], 
+      SubscriptBox["f", "1"], 
+      SubscriptBox["\[Mu]", "\[Eta]1"]}]}],
+    FontSize->24]}], 
+  StyleBox[";",
+   FontSize->24]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   StyleBox[
+    SubscriptBox["M", "\[Eta]"],
+    FontSize->24], 
+   StyleBox["=",
+    FontSize->36], 
+   RowBox[{
+    StyleBox[
+     SubscriptBox["f", "8"],
+     FontSize->36], 
+    StyleBox[
+     SubscriptBox["\[Mu]", "\[Eta]8"],
+     FontSize->36], 
+    RowBox[{
+     StyleBox["(",
+      FontSize->36], 
+     RowBox[{
+      RowBox[{
+       StyleBox["Cos",
+        FontSize->36], 
+       StyleBox["[",
+        FontSize->18], 
+       StyleBox[
+        SubscriptBox["\[CapitalTheta]", "8"],
+        FontSize->36], 
+       StyleBox["]",
+        FontSize->36]}], 
+      StyleBox["-",
+       FontSize->24], 
+      RowBox[{
+       RowBox[{
+        StyleBox["Sqrt",
+         FontSize->36], 
+        StyleBox["[",
+         FontSize->36], 
+        StyleBox[
+         StyleBox[
+          RowBox[{
+           StyleBox["2",
+            FontSize->36], 
+           StyleBox[".",
+            FontSize->24]}]],
+         FontSize->18], 
+        StyleBox["]",
+         FontSize->36]}], 
+       StyleBox[
+        RowBox[{"Sin", "[", 
+         SubscriptBox["\[CapitalTheta]", "1"], "]"}],
+        FontSize->36], 
+       StyleBox[
+        FractionBox[
+         RowBox[{
+          SubscriptBox["f", "1"], 
+          SubscriptBox["\[Mu]", "\[Eta]1"]}], 
+         RowBox[{
+          SubscriptBox["f", "8"], 
+          SubscriptBox["\[Mu]", "\[Eta]8"]}]],
+        FontSize->24]}]}], 
+     StyleBox[")",
+      FontSize->24]}]}]}], 
+  StyleBox[";",
+   FontSize->24]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   StyleBox["k",
+    FontSize->24], 
+   StyleBox["=",
+    FontSize->24], 
+   RowBox[{
+    StyleBox[
+     RowBox[{
+      StyleBox["Cos",
+       FontSize->36], 
+      StyleBox["[",
+       FontSize->18], 
+      StyleBox[
+       SubscriptBox["\[CapitalTheta]", "8"],
+       FontSize->36], 
+      StyleBox["]",
+       FontSize->36]}],
+     FontSize->24], 
+    StyleBox["-",
+     FontSize->24], 
+    RowBox[{
+     StyleBox[
+      RowBox[{
+       StyleBox["Sqrt",
+        FontSize->36], 
+       StyleBox["[",
+        FontSize->36], 
+       StyleBox[
+        StyleBox[
+         RowBox[{
+          StyleBox["2",
+           FontSize->36], 
+          StyleBox[".",
+           FontSize->24]}]],
+        FontSize->18], 
+       StyleBox["]",
+        FontSize->36]}],
+      FontSize->24], 
+     StyleBox[
+      RowBox[{"Sin", "[", 
+       SubscriptBox["\[CapitalTheta]", "1"], "]"}],
+      FontSize->36], 
+     StyleBox[
+      FractionBox[
+       RowBox[{
+        SubscriptBox["f", "1"], 
+        SubscriptBox["\[Mu]", "\[Eta]1"]}], 
+       RowBox[{
+        SubscriptBox["f", "8"], 
+        SubscriptBox["\[Mu]", "\[Eta]8"]}]],
+      FontSize->24]}]}]}], 
+  StyleBox[";",
+   FontSize->24]}], "\[IndentingNewLine]", 
+ StyleBox[
+  RowBox[{
+   RowBox[{
+    SubscriptBox["M", "\[Eta]"], "=", 
+    RowBox[{
+     SubscriptBox["M", "\[Pi]"], "k"}]}], ";"}],
+  FontSize->24], "\[IndentingNewLine]", 
+ StyleBox[
+  RowBox[{"Print", "[", 
+   RowBox[{"\"\<k=\>\"", ",", "k"}], "]"}],
+  FontSize->24], "\[IndentingNewLine]", 
+ StyleBox[
+  RowBox[{"Print", "[", 
+   RowBox[{"\"\<\!\(\*SubscriptBox[\(\[Mu]\), \(\[Pi]\)]\)=\>\"", ",", 
+    SubscriptBox["\[Mu]", "\[Pi]"]}], "]"}],
+  FontSize->24], "\[IndentingNewLine]", 
+ StyleBox[
+  RowBox[{"Print", "[", 
+   RowBox[{"\"\<\!\(\*SubscriptBox[\(\[Mu]\), \(\[Eta]8\)]\)=\>\"", ",", 
+    SubscriptBox["\[Mu]", "\[Eta]8"]}], "]"}],
+  FontSize->24], "\[IndentingNewLine]", 
+ RowBox[{
+  StyleBox[
+   RowBox[{"Print", "[", 
+    RowBox[{"\"\<\!\(\*SubscriptBox[\(\[Mu]\), \(\[Eta]1\)]\)=\>\"", ",", 
+     SubscriptBox["\[Mu]", "\[Eta]1"]}], "]"}],
+   FontSize->24], 
+  StyleBox["\[IndentingNewLine]",
+   FontSize->24]}], "\[IndentingNewLine]", 
+ RowBox[{
+  StyleBox[
+   RowBox[{"Print", "[", 
+    RowBox[{"\"\<k=\>\"", ",", "k"}], "]"}],
+   FontSize->24], 
+  StyleBox["\[IndentingNewLine]",
+   FontSize->24]}], "\[IndentingNewLine]", 
+ RowBox[{
+  StyleBox[
+   RowBox[{
+    StyleBox["Cos",
+     FontSize->36], 
+    StyleBox["[",
+     FontSize->18], 
+    StyleBox[
+     SubscriptBox["\[CapitalTheta]", "8"],
+     FontSize->36], 
+    StyleBox["]",
+     FontSize->36]}],
+   FontSize->24], 
+  StyleBox["1.26",
+   FontSize->36], 
+  StyleBox[
+   FractionBox[
+    SubscriptBox["\[Mu]", "\[Eta]8"], 
+    SubscriptBox["\[Mu]", "\[Pi]"]],
+   FontSize->24]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   StyleBox[
+    RowBox[{"Sqrt", "[", "2", "]"}],
+    FontSize->36], 
+   StyleBox[
+    RowBox[{"Sin", "[", 
+     SubscriptBox["\[CapitalTheta]", "1"], "]"}],
+    FontSize->36], 
+   StyleBox["1.17",
+    FontSize->36], 
+   StyleBox[
+    FractionBox[
+     SubscriptBox["\[Mu]", "\[Eta]1"], 
+     SubscriptBox["\[Mu]", "\[Pi]"]],
+    FontSize->24]}], 
+  StyleBox["\[IndentingNewLine]",
+   FontSize->24], 
+  StyleBox["\[IndentingNewLine]",
+   FontSize->24]}], "\[IndentingNewLine]"}], "Input",
+ CellChangeTimes->{
+  3.791568351559854*^9, {3.7915684123580427`*^9, 3.791568428704196*^9}, {
+   3.791569940639399*^9, 3.79157063938878*^9}, {3.7915706834533033`*^9, 
+   3.791570689613256*^9}, {3.791570759228623*^9, 3.791570990435548*^9}, {
+   3.791571528617672*^9, 3.7915715983459272`*^9}, {3.791571681256831*^9, 
+   3.7915716826249437`*^9}, 3.791571723543848*^9, 3.7915717634980288`*^9, {
+   3.791571797869548*^9, 3.7915718597750072`*^9}, {3.791571919151228*^9, 
+   3.7915721491267138`*^9}, {3.791572206141522*^9, 3.791572300525523*^9}, {
+   3.7915723832935143`*^9, 3.791572402845664*^9}, {3.7915724367898417`*^9, 
+   3.7915724474211082`*^9}, {3.791572482604447*^9, 3.7915726336193037`*^9}, {
+   3.7915727086286583`*^9, 3.7915727705239983`*^9}, {3.791572808275559*^9, 
+   3.79157287429158*^9}, {3.7915729866668377`*^9, 3.7915729969135427`*^9}, {
+   3.7915733142886047`*^9, 3.791573693895549*^9}, {3.791573735647253*^9, 
+   3.7915737533659267`*^9}, {3.791573787657979*^9, 3.791573823190914*^9}, {
+   3.791574054255578*^9, 3.791574057222492*^9}, {3.791575017616218*^9, 
+   3.791575051407811*^9}, {3.791575180720221*^9, 3.791575199527701*^9}, {
+   3.791575287841361*^9, 3.791575315667666*^9}, {3.791575346134941*^9, 
+   3.7915753516615047`*^9}, 3.791575484847666*^9, {3.7917417708689127`*^9, 
+   3.791741784222702*^9}, {3.795973760711158*^9, 3.7959737895621367`*^9}, {
+   3.795974381439395*^9, 3.7959744230986156`*^9}, {3.79597445814625*^9, 
+   3.795974514654121*^9}, {3.7959746188491907`*^9, 3.795974650708308*^9}, {
+   3.7959746834742317`*^9, 3.795974715770941*^9}, {3.795975211459538*^9, 
+   3.7959752178128977`*^9}, {3.795977046773682*^9, 3.795977047073299*^9}, {
+   3.7959775646702433`*^9, 3.795977565261921*^9}, 3.795977659945746*^9, {
+   3.79597855008603*^9, 3.795978618834112*^9}, 3.795978658358411*^9, {
+   3.795979016964053*^9, 3.795979029687086*^9}},
+ CellLabel->
+  "In[1013]:=",ExpressionUUID->"682804f5-d481-4739-b030-b992063b5e5b"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"k=\"\>", "\[InvisibleSpace]", "1.018729588372827`"}],
+  SequenceForm["k=", 1.018729588372827],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.79157274020217*^9, 3.791572771107864*^9}, 
+   3.791572875597498*^9, 3.791572998011383*^9, {3.7915736737685966`*^9, 
+   3.791573699713499*^9}, 3.791573755385709*^9, {3.791573819488289*^9, 
+   3.791573824850466*^9}, {3.79157503561861*^9, 3.791575055416027*^9}, 
+   3.7915752014476967`*^9, 3.791575291696599*^9, {3.791575354651884*^9, 
+   3.791575374769816*^9}, 3.791575487192583*^9, 3.791741785068647*^9, 
+   3.7959734465032187`*^9, 3.795974853039587*^9, 3.7959752276851883`*^9, 
+   3.795977049122882*^9, 3.795977100018605*^9, 3.79597756655015*^9, 
+   3.795977672099326*^9, 3.795977830727338*^9, 3.795978661229645*^9, 
+   3.7959790316983557`*^9},
+ CellLabel->
+  "During evaluation of \
+In[1013]:=",ExpressionUUID->"bff7838c-28cc-416c-848e-1a16d53d106b"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\\!\\(\\*SubscriptBox[\\(\[Mu]\\), \\(\[Pi]\\)]\\)=\"\>", 
+   "\[InvisibleSpace]", "2.640380950284058`"}],
+  SequenceForm[
+  "\!\(\*SubscriptBox[\(\[Mu]\), \(\[Pi]\)]\)=", 2.640380950284058],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.79157274020217*^9, 3.791572771107864*^9}, 
+   3.791572875597498*^9, 3.791572998011383*^9, {3.7915736737685966`*^9, 
+   3.791573699713499*^9}, 3.791573755385709*^9, {3.791573819488289*^9, 
+   3.791573824850466*^9}, {3.79157503561861*^9, 3.791575055416027*^9}, 
+   3.7915752014476967`*^9, 3.791575291696599*^9, {3.791575354651884*^9, 
+   3.791575374769816*^9}, 3.791575487192583*^9, 3.791741785068647*^9, 
+   3.7959734465032187`*^9, 3.795974853039587*^9, 3.7959752276851883`*^9, 
+   3.795977049122882*^9, 3.795977100018605*^9, 3.79597756655015*^9, 
+   3.795977672099326*^9, 3.795977830727338*^9, 3.795978661229645*^9, 
+   3.795979031701068*^9},
+ CellLabel->
+  "During evaluation of \
+In[1013]:=",ExpressionUUID->"8cba750a-1962-4018-aa7b-ecd015c186e3"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\\!\\(\\*SubscriptBox[\\(\[Mu]\\), \\(\[Eta]8\\)]\\)=\"\>", 
+   "\[InvisibleSpace]", "2.3272905888524167`"}],
+  SequenceForm[
+  "\!\(\*SubscriptBox[\(\[Mu]\), \(\[Eta]8\)]\)=", 2.3272905888524167`],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.79157274020217*^9, 3.791572771107864*^9}, 
+   3.791572875597498*^9, 3.791572998011383*^9, {3.7915736737685966`*^9, 
+   3.791573699713499*^9}, 3.791573755385709*^9, {3.791573819488289*^9, 
+   3.791573824850466*^9}, {3.79157503561861*^9, 3.791575055416027*^9}, 
+   3.7915752014476967`*^9, 3.791575291696599*^9, {3.791575354651884*^9, 
+   3.791575374769816*^9}, 3.791575487192583*^9, 3.791741785068647*^9, 
+   3.7959734465032187`*^9, 3.795974853039587*^9, 3.7959752276851883`*^9, 
+   3.795977049122882*^9, 3.795977100018605*^9, 3.79597756655015*^9, 
+   3.795977672099326*^9, 3.795977830727338*^9, 3.795978661229645*^9, 
+   3.795979031703376*^9},
+ CellLabel->
+  "During evaluation of \
+In[1013]:=",ExpressionUUID->"a5b40f15-e679-4765-a6ad-791e75dd2fd2"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\\!\\(\\*SubscriptBox[\\(\[Mu]\\), \\(\[Eta]1\\)]\\)=\"\>", 
+   "\[InvisibleSpace]", "0.95778`"}],
+  SequenceForm["\!\(\*SubscriptBox[\(\[Mu]\), \(\[Eta]1\)]\)=", 0.95778],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.79157274020217*^9, 3.791572771107864*^9}, 
+   3.791572875597498*^9, 3.791572998011383*^9, {3.7915736737685966`*^9, 
+   3.791573699713499*^9}, 3.791573755385709*^9, {3.791573819488289*^9, 
+   3.791573824850466*^9}, {3.79157503561861*^9, 3.791575055416027*^9}, 
+   3.7915752014476967`*^9, 3.791575291696599*^9, {3.791575354651884*^9, 
+   3.791575374769816*^9}, 3.791575487192583*^9, 3.791741785068647*^9, 
+   3.7959734465032187`*^9, 3.795974853039587*^9, 3.7959752276851883`*^9, 
+   3.795977049122882*^9, 3.795977100018605*^9, 3.79597756655015*^9, 
+   3.795977672099326*^9, 3.795977830727338*^9, 3.795978661229645*^9, 
+   3.795979031704907*^9},
+ CellLabel->
+  "During evaluation of \
+In[1013]:=",ExpressionUUID->"248d97d8-11a3-4882-8651-30d1a4bfb2da"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"k=\"\>", "\[InvisibleSpace]", "1.018729588372827`"}],
+  SequenceForm["k=", 1.018729588372827],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.79157274020217*^9, 3.791572771107864*^9}, 
+   3.791572875597498*^9, 3.791572998011383*^9, {3.7915736737685966`*^9, 
+   3.791573699713499*^9}, 3.791573755385709*^9, {3.791573819488289*^9, 
+   3.791573824850466*^9}, {3.79157503561861*^9, 3.791575055416027*^9}, 
+   3.7915752014476967`*^9, 3.791575291696599*^9, {3.791575354651884*^9, 
+   3.791575374769816*^9}, 3.791575487192583*^9, 3.791741785068647*^9, 
+   3.7959734465032187`*^9, 3.795974853039587*^9, 3.7959752276851883`*^9, 
+   3.795977049122882*^9, 3.795977100018605*^9, 3.79597756655015*^9, 
+   3.795977672099326*^9, 3.795977830727338*^9, 3.795978661229645*^9, 
+   3.7959790317063437`*^9},
+ CellLabel->
+  "During evaluation of \
+In[1013]:=",ExpressionUUID->"b34b8fd8-959c-4dc7-8614-89ad83c23bb5"]
+}, Open  ]],
+
+Cell[BoxData["1.0354314191685723`"], "Output",
+ CellChangeTimes->{
+  3.791575201452758*^9, 3.791575291701622*^9, {3.791575354656786*^9, 
+   3.791575374774577*^9}, 3.791575487197781*^9, 3.791741785074284*^9, 
+   3.795973446511539*^9, 3.7959748530485687`*^9, 3.795975227694105*^9, 
+   3.795977049132148*^9, 3.7959771000290318`*^9, 3.795977566559862*^9, 
+   3.795977672108573*^9, 3.795977830737299*^9, 3.7959786612399693`*^9, 
+   3.7959790317077627`*^9},
+ CellLabel->
+  "Out[1040]=",ExpressionUUID->"e493d71f-eff6-4d6b-b005-1c4885466617"],
+
+Cell[BoxData[
+ RowBox[{"-", "0.09596158191395887`"}]], "Output",
+ CellChangeTimes->{
+  3.791575201452758*^9, 3.791575291701622*^9, {3.791575354656786*^9, 
+   3.791575374774577*^9}, 3.791575487197781*^9, 3.791741785074284*^9, 
+   3.795973446511539*^9, 3.7959748530485687`*^9, 3.795975227694105*^9, 
+   3.795977049132148*^9, 3.7959771000290318`*^9, 3.795977566559862*^9, 
+   3.795977672108573*^9, 3.795977830737299*^9, 3.7959786612399693`*^9, 
+   3.795979031709816*^9},
+ CellLabel->
+  "Out[1041]=",ExpressionUUID->"b6f70bb3-d876-421f-aed4-d3f930c899b0"]
+}, Open  ]]
+},
+WindowSize->{1307, 1498},
+WindowMargins->{{Automatic, -1644}, {-142, Automatic}},
+FrontEndVersion->"12.0 for Mac OS X x86 (64-bit) (April 8, 2019)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 13722, 506, 1490, "Input",ExpressionUUID->"682804f5-d481-4739-b030-b992063b5e5b"],
+Cell[CellGroupData[{
+Cell[14327, 532, 947, 17, 24, "Print",ExpressionUUID->"bff7838c-28cc-416c-848e-1a16d53d106b"],
+Cell[15277, 551, 1042, 19, 26, "Print",ExpressionUUID->"8cba750a-1962-4018-aa7b-ecd015c186e3"],
+Cell[16322, 572, 1049, 19, 27, "Print",ExpressionUUID->"a5b40f15-e679-4765-a6ad-791e75dd2fd2"],
+Cell[17374, 593, 1023, 18, 27, "Print",ExpressionUUID->"248d97d8-11a3-4882-8651-30d1a4bfb2da"],
+Cell[18400, 613, 947, 17, 24, "Print",ExpressionUUID->"b34b8fd8-959c-4dc7-8614-89ad83c23bb5"]
+}, Open  ]],
+Cell[19362, 633, 535, 9, 34, "Output",ExpressionUUID->"e493d71f-eff6-4d6b-b005-1c4885466617"],
+Cell[19900, 644, 551, 10, 34, "Output",ExpressionUUID->"b6f70bb3-d876-421f-aed4-d3f930c899b0"]
+}, Open  ]]
+}
+]
+*)
+

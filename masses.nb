@@ -1,0 +1,356 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      9309,        348]
+NotebookOptionsPosition[      8954,        334]
+NotebookOutlinePosition[      9354,        350]
+CellTagsIndexPosition[      9311,        347]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"(*", 
+    RowBox[{"**", " ", "Constants"}], " ", "***)"}],
+   FontSize->36,
+   FontColor->RGBColor[1, 0, 1]], 
+  StyleBox["\[IndentingNewLine]",
+   FontSize->36,
+   FontColor->RGBColor[1, 0, 1]], 
+  RowBox[{
+   StyleBox[
+    RowBox[{
+     RowBox[{
+      StyleBox["vc",
+       FontColor->RGBColor[1, 0, 1]], 
+      StyleBox["=",
+       FontColor->GrayLevel[0]], 
+      StyleBox["299792458",
+       FontColor->GrayLevel[0]]}], 
+     StyleBox[";",
+      FontColor->GrayLevel[0]]}],
+    FontSize->16], 
+   StyleBox[" ",
+    FontSize->16,
+    FontColor->GrayLevel[0]], 
+   StyleBox[
+    RowBox[{
+     StyleBox[
+      RowBox[{"(", "*"}]], 
+     RowBox[{"m", "/", "s"}], 
+     StyleBox[
+      RowBox[{"*", ")"}]]}],
+    FontSize->16,
+    FontColor->RGBColor[1, 0, 1]], 
+   StyleBox["\[IndentingNewLine]",
+    FontSize->16], 
+   RowBox[{
+    StyleBox[
+     RowBox[{"qe", "=", 
+      RowBox[{"1.6021766208", " ", 
+       RowBox[{"10", "^", 
+        RowBox[{"(", 
+         RowBox[{"-", "19"}], ")"}]}]}]}],
+     FontSize->12], 
+    StyleBox[";",
+     FontSize->12], 
+    StyleBox[" ",
+     FontSize->12], 
+    StyleBox[
+     RowBox[{"(*", " ", "C", " ", "*)"}],
+     FontSize->12], 
+    StyleBox["\[IndentingNewLine]",
+     FontSize->36,
+     FontColor->RGBColor[1, 0, 1]], 
+    StyleBox[
+     RowBox[{"mu", "        ", "=", " ", "0.0023"}],
+     FontSize->12], 
+    StyleBox[" ",
+     FontSize->12], 
+    StyleBox[";",
+     FontSize->12]}], 
+   StyleBox["\n",
+    FontSize->16], 
+   StyleBox[
+    RowBox[{
+     RowBox[{"md", "        ", "=", " ", "0.0048"}], " ", ";"}],
+    FontSize->16], 
+   StyleBox["\n",
+    FontSize->16], 
+   StyleBox[
+    RowBox[{
+     RowBox[{"ms", "        ", "=", " ", "0.095"}], " ", ";"}],
+    FontSize->16], 
+   StyleBox["\n",
+    FontSize->16], 
+   StyleBox[
+    RowBox[{
+     RowBox[{"mc", "        ", "=", " ", "1.275"}], " ", ";"}],
+    FontSize->16], 
+   StyleBox["\n",
+    FontSize->16], 
+   StyleBox[
+    RowBox[{
+     RowBox[{"mb", "        ", "=", " ", "4.18"}], " ", ";"}],
+    FontSize->16], 
+   StyleBox["\n",
+    FontSize->16], 
+   StyleBox[
+    RowBox[{
+     RowBox[{"mt", "        ", "=", " ", "173.5"}], " ", ";"}],
+    FontSize->16], 
+   StyleBox["\n",
+    FontSize->16], 
+   StyleBox[
+    RowBox[{
+     RowBox[{"mh", "        ", "=", " ", "125.09"}], " ", ";"}],
+    FontSize->16], 
+   StyleBox["\n",
+    FontSize->16], 
+   StyleBox[
+    RowBox[{
+     RowBox[{"mg", "        ", "=", " ", "0.0"}], " ", ";"}],
+    FontSize->16], 
+   StyleBox["\n",
+    FontSize->16], 
+   StyleBox[
+    RowBox[{
+     RowBox[{"me", "        ", "=", " ", "0.00051099907"}], " ", ";"}],
+    FontSize->16], 
+   StyleBox["\n",
+    FontSize->16], 
+   StyleBox[
+    RowBox[{
+     RowBox[{"mmu", "      ", "=", " ", "0.1056583745"}], " ", ";"}],
+    FontSize->16], 
+   StyleBox["\n",
+    FontSize->16], 
+   StyleBox[
+    RowBox[{
+     RowBox[{"mpi0", "    ", "=", " ", "0.1349764"}], " ", ";"}],
+    FontSize->16], 
+   StyleBox["\n",
+    FontSize->16], 
+   StyleBox[
+    RowBox[{
+     RowBox[{"mpi", "       ", "=", " ", "0.13956995"}], " ", ";"}],
+    FontSize->16], 
+   StyleBox["\n",
+    FontSize->16], 
+   StyleBox[
+    RowBox[{
+     RowBox[{"mk0", "       ", "=", " ", "0.497672"}], " ", ";"}],
+    FontSize->16], 
+   StyleBox["\n",
+    FontSize->16], 
+   StyleBox[
+    RowBox[{
+     RowBox[{"mk", "         ", "=", " ", "0.493677"}], " ", ";"}],
+    FontSize->16], 
+   StyleBox["\n",
+    FontSize->16], 
+   StyleBox[
+    RowBox[{
+     RowBox[{"meta", "      ", "=", " ", "0.547853"}], " ", ";"}],
+    FontSize->16], 
+   StyleBox["\n",
+    FontSize->16], 
+   StyleBox[
+    RowBox[{
+     RowBox[{"mrho", "      ", "=", " ", "0.77549"}], " ", ";"}],
+    FontSize->16], 
+   StyleBox["\n",
+    FontSize->16], 
+   StyleBox[
+    RowBox[{
+     RowBox[{"mom", "         ", "=", " ", "0.78265"}], " ", ";"}],
+    FontSize->16], 
+   StyleBox["\n",
+    FontSize->16], 
+   StyleBox[
+    RowBox[{
+     RowBox[{"metap", "     ", "=", " ", "0.95778"}], " ", ";"}],
+    FontSize->16], 
+   StyleBox["\n",
+    FontSize->16], 
+   StyleBox[
+    RowBox[{
+     RowBox[{"mphi", "       ", "=", " ", "1.01945"}], " ", ";"}],
+    FontSize->16], 
+   StyleBox["\n",
+    FontSize->16], 
+   StyleBox[
+    RowBox[{
+     RowBox[{"mf1", "         ", "=", " ", "1.2821"}], " ", ";"}],
+    FontSize->16], 
+   StyleBox["\n",
+    FontSize->16], 
+   StyleBox[
+    RowBox[{
+     RowBox[{"ma2", "         ", "=", " ", "1.3183"}], ";"}],
+    FontSize->16], 
+   StyleBox["\n",
+    FontSize->16], 
+   StyleBox[
+    RowBox[{
+     RowBox[{"mn", "           ", "=", " ", "0.93956563"}], " ", ";"}],
+    FontSize->16], 
+   StyleBox["\n",
+    FontSize->16], 
+   StyleBox[
+    RowBox[{
+     RowBox[{"mp", "           ", "=", " ", "0.93827231"}], " ", ";"}],
+    FontSize->16], 
+   StyleBox["\n",
+    FontSize->16], 
+   StyleBox[
+    RowBox[{
+     RowBox[{"mdelta0", "   ", "=", " ", "1.232"}], " ", ";"}],
+    FontSize->16], 
+   StyleBox["\n",
+    FontSize->16], 
+   StyleBox[
+    RowBox[{
+     RowBox[{"mlambda", "   ", "=", " ", "1.115683"}], " ", ";"}],
+    FontSize->16], 
+   StyleBox["\n",
+    FontSize->16], 
+   StyleBox[
+    RowBox[{
+     RowBox[{"ml1520", "    ", "=", " ", "1.5195"}], " ", ";"}],
+    FontSize->16], 
+   StyleBox["\n",
+    FontSize->16], 
+   StyleBox[
+    RowBox[{
+     RowBox[{"msigmap", "   ", "=", " ", "1.18937"}], " ", ";"}],
+    FontSize->16], 
+   StyleBox["\n",
+    FontSize->16], 
+   StyleBox[
+    RowBox[{
+     RowBox[{"msigman", "   ", "=", " ", "1.197449"}], " ", ";"}],
+    FontSize->16], 
+   StyleBox["\n",
+    FontSize->16], 
+   StyleBox[
+    RowBox[{
+     RowBox[{"msigma0", "   ", "=", " ", "1.192642"}], " ", ";"}],
+    FontSize->16], 
+   StyleBox["\n",
+    FontSize->16], 
+   StyleBox[
+    RowBox[{
+     RowBox[{"mD2", "               ", "=", " ", "1.875613"}], " ", ";"}],
+    FontSize->16], 
+   StyleBox["\[IndentingNewLine]",
+    FontSize->16], 
+   StyleBox[
+    RowBox[{
+     RowBox[{"malpha", "       ", "=", " ", 
+      RowBox[{"me", "/", "0.000137093354"}]}], ";"}],
+    FontSize->16], 
+   StyleBox["\[IndentingNewLine]",
+    FontSize->16], 
+   StyleBox[
+    RowBox[{
+     RowBox[{"mjpsi", "       ", "=", " ", "3.096917"}], " ", ";"}],
+    FontSize->16], 
+   StyleBox["\n",
+    FontSize->16], 
+   StyleBox[
+    RowBox[{
+     RowBox[{"mpsi2s", "    ", "=", " ", "3.686109"}], " ", ";"}],
+    FontSize->16], 
+   StyleBox["\n",
+    FontSize->16], 
+   StyleBox[
+    RowBox[{
+     RowBox[{"mw", "        ", "=", "  ", "80.385"}], " ", ";"}],
+    FontSize->16], 
+   StyleBox["\n",
+    FontSize->16], 
+   StyleBox[
+    RowBox[{
+     RowBox[{"mz", "        ", "=", "  ", "91.1876"}], " ", ";"}],
+    FontSize->16], 
+   StyleBox["\n",
+    FontSize->16], 
+   StyleBox[
+    RowBox[{
+     RowBox[{"mpenta1", "   ", "=", "  ", "4.380"}], "  ", ";"}],
+    FontSize->16], 
+   StyleBox["\n",
+    FontSize->16], 
+   StyleBox[
+    RowBox[{
+     RowBox[{"mpenta2", "   ", "=", "  ", "4.4498"}], " ", ";"}],
+    FontSize->16], 
+   StyleBox["\[IndentingNewLine]",
+    FontSize->16], 
+   StyleBox[
+    RowBox[{
+     RowBox[{"mH3", "            ", "=", " ", "2.8089433"}], ";"}],
+    FontSize->16], 
+   StyleBox["\[IndentingNewLine]",
+    FontSize->16], 
+   StyleBox[
+    RowBox[{
+     RowBox[{"mHe4", "          ", "=", " ", "3.72738"}], ";"}],
+    FontSize->16], 
+   StyleBox["\[IndentingNewLine]",
+    FontSize->16], 
+   StyleBox[
+    RowBox[{
+     RowBox[{"mHe4s", "         ", "=", " ", 
+      RowBox[{"mHe4", "+", "0.002021"}]}], ";"}],
+    FontSize->16], 
+   StyleBox["\[IndentingNewLine]",
+    FontSize->16]}]}]], "Input",
+ CellChangeTimes->{{3.793713414218603*^9, 3.7937134142209*^9}, {
+   3.793713458458023*^9, 3.793713584770317*^9}, {3.793713617350471*^9, 
+   3.793713617420926*^9}, {3.793713698507139*^9, 3.793713723522828*^9}, {
+   3.800810282148649*^9, 3.800810314541122*^9}, {3.8008104447525806`*^9, 
+   3.800810454695825*^9}, {3.800810561122069*^9, 3.80081063464207*^9}, {
+   3.8008106706455507`*^9, 3.800810675728764*^9}, 3.802712842040491*^9, {
+   3.806927036396553*^9, 3.806927065631138*^9}, {3.806927097007597*^9, 
+   3.8069271979000053`*^9}, {3.8290615130961637`*^9, 3.829061529071187*^9}, {
+   3.82906159100453*^9, 3.829061720136758*^9}, {3.829061900947917*^9, 
+   3.8290619536790247`*^9}, {3.8290619870043087`*^9, 3.8290619903207703`*^9}},
+ 
+ CellLabel->
+  "In[341]:=",ExpressionUUID->"4481ecb8-07c0-4cef-81df-abf1dbef577a"]
+},
+WindowSize->{808, 755},
+WindowMargins->{{Automatic, -2579}, {Automatic, 58}},
+FrontEndVersion->"12.2 for Mac OS X x86 (64-bit) (December 12, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"eced5e91-3414-4365-92a9-5051286f4f36"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 8392, 312, 1006, "Input",ExpressionUUID->"4481ecb8-07c0-4cef-81df-abf1dbef577a"]
+}
+]
+*)
+

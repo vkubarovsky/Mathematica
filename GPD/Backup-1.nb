@@ -1,0 +1,300 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      7894,        290]
+NotebookOptionsPosition[      7581,        276]
+NotebookOutlinePosition[      7940,        292]
+CellTagsIndexPosition[      7897,        289]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ StyleBox[
+  RowBox[{
+   RowBox[{"Au", "=", "0.5"}], ";"}],
+  FontSize->18,
+  FontWeight->"SemiBold"], "\[IndentingNewLine]", 
+ StyleBox[
+  RowBox[{
+   RowBox[{"Bu", "=", "0.5"}], ";"}],
+  FontSize->18,
+  FontWeight->"SemiBold"], "\[IndentingNewLine]", 
+ StyleBox[
+  RowBox[{
+   RowBox[{"\[Alpha]u", "=", "0.3"}], ";"}],
+  FontSize->18,
+  FontWeight->"SemiBold"], "\[IndentingNewLine]", 
+ StyleBox[
+  RowBox[{
+   RowBox[{
+    RowBox[{"\[Alpha]u", "'"}], "=", "0.45"}], ";"}],
+  FontSize->18,
+  FontWeight->"SemiBold"], "\[IndentingNewLine]", 
+ StyleBox[
+  RowBox[{
+   RowBox[{"nu", "=", "4.83"}], ";"}],
+  FontSize->18,
+  FontWeight->"SemiBold"], "\[IndentingNewLine]", 
+ StyleBox[
+  RowBox[{
+   RowBox[{"\[Beta]u", "=", "4"}], ";"}],
+  FontSize->18,
+  FontWeight->"SemiBold"], "\[IndentingNewLine]", 
+ StyleBox[
+  RowBox[{
+   RowBox[{"ETPFu", "[", "xx_", "]"}], ":=", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"Bu", "+", 
+       RowBox[{
+        RowBox[{"\[Alpha]u", "'"}], 
+        RowBox[{"Log", "[", 
+         RowBox[{"1.", "/", "xx"}], "]"}]}]}], ")"}], "*", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"1.", "-", "xx"}], ")"}], "^", "3"}]}], "+", 
+    RowBox[{"Au", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"1.", "-", "xx"}], ")"}], "^", "2"}]}]}]}],
+  FontSize->18,
+  FontWeight->"SemiBold"], "\[IndentingNewLine]", 
+ StyleBox[
+  RowBox[{
+   RowBox[{
+    RowBox[{"ETFLu", "[", "xx_", "]"}], ":=", 
+    RowBox[{"nu", "*", 
+     RowBox[{"xx", "^", "\[Alpha]u"}], "*", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"1.", "-", "xx"}], ")"}], "^", "\[Beta]u"}]}]}], 
+   "\[IndentingNewLine]"}],
+  FontSize->18,
+  FontWeight->"SemiBold"], "\[IndentingNewLine]", 
+ StyleBox[
+  RowBox[{
+   RowBox[{"Ad", "=", "0.5"}], ";"}],
+  FontSize->18,
+  FontWeight->"SemiBold"], "\[IndentingNewLine]", 
+ StyleBox[
+  RowBox[{
+   RowBox[{"Bd", "=", "0.5"}], ";"}],
+  FontSize->18,
+  FontWeight->"SemiBold"], "\[IndentingNewLine]", 
+ StyleBox[
+  RowBox[{
+   RowBox[{"\[Alpha]d", "=", "0.3"}], ";"}],
+  FontSize->18,
+  FontWeight->"SemiBold"], "\[IndentingNewLine]", 
+ StyleBox[
+  RowBox[{
+   RowBox[{
+    RowBox[{"\[Alpha]d", "'"}], "=", "0.45"}], ";"}],
+  FontSize->18,
+  FontWeight->"SemiBold"], "\[IndentingNewLine]", 
+ StyleBox[
+  RowBox[{
+   RowBox[{"nd", "=", "3.57"}], ";"}],
+  FontSize->18,
+  FontWeight->"SemiBold"], "\[IndentingNewLine]", 
+ StyleBox[
+  RowBox[{
+   RowBox[{"\[Beta]d", "=", "5"}], ";"}],
+  FontSize->18,
+  FontWeight->"SemiBold"], "\[IndentingNewLine]", 
+ StyleBox[
+  RowBox[{
+   RowBox[{"ETPFd", "[", "xx_", "]"}], ":=", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"Bd", "+", 
+       RowBox[{
+        RowBox[{"\[Alpha]d", "'"}], 
+        RowBox[{"Log", "[", 
+         RowBox[{"1.", "/", "xx"}], "]"}]}]}], ")"}], "*", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"1.", "-", "xx"}], ")"}], "^", "3"}]}], "+", 
+    RowBox[{"Ad", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"1.", "-", "xx"}], ")"}], "^", "2"}]}]}]}],
+  FontSize->18,
+  FontWeight->"SemiBold"], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   StyleBox[
+    RowBox[{"ETFLd", "[", "xx_", "]"}],
+    FontSize->18,
+    FontWeight->"SemiBold"], 
+   StyleBox[":=",
+    FontSize->18,
+    FontWeight->"SemiBold"], 
+   RowBox[{
+    StyleBox["nd",
+     FontSize->14], 
+    StyleBox["*",
+     FontSize->24,
+     FontWeight->"SemiBold"], 
+    RowBox[{
+     StyleBox["xx",
+      FontSize->18,
+      FontWeight->"SemiBold"], 
+     StyleBox["^",
+      FontSize->18,
+      FontWeight->"SemiBold"], 
+     StyleBox["\[Alpha]d",
+      FontSize->16]}], 
+    StyleBox["*",
+     FontSize->18], 
+    StyleBox[
+     RowBox[{
+      StyleBox[
+       RowBox[{"(", 
+        RowBox[{"1.", "-", "xx"}], ")"}],
+       FontWeight->"SemiBold"], 
+      StyleBox["^",
+       FontWeight->"SemiBold"], "\[Beta]d"}],
+     FontSize->18]}]}], "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ StyleBox[
+  RowBox[{
+   RowBox[{"ETu", "[", 
+    RowBox[{"xx_", ",", "t_"}], "]"}], ":=", 
+   RowBox[{
+    RowBox[{"ETFLu", 
+     StyleBox["[",
+      FontWeight->"SemiBold"], 
+     StyleBox["xx",
+      FontWeight->"SemiBold"], 
+     StyleBox["]",
+      FontWeight->"SemiBold"]}], 
+    StyleBox["*",
+     FontWeight->"SemiBold"], 
+    StyleBox[
+     RowBox[{"Exp", "[", 
+      RowBox[{
+       RowBox[{"ETPFu", "[", "xx", "]"}], "*", "t"}], "]"}],
+     FontWeight->"SemiBold"]}]}],
+  FontSize->18], "\[IndentingNewLine]", 
+ RowBox[{
+  StyleBox[
+   RowBox[{
+    RowBox[{"ETd", "[", 
+     RowBox[{"xx_", ",", "t_"}], "]"}], ":=", 
+    RowBox[{
+     RowBox[{"ETFLd", 
+      StyleBox["[",
+       FontWeight->"SemiBold"], 
+      StyleBox["xx",
+       FontWeight->"SemiBold"], 
+      StyleBox["]",
+       FontWeight->"SemiBold"]}], 
+     StyleBox["*",
+      FontWeight->"SemiBold"], 
+     StyleBox[
+      RowBox[{"Exp", "[", 
+       RowBox[{
+        RowBox[{"ETPFd", "[", "xx", "]"}], "*", "t"}], "]"}],
+      FontWeight->"SemiBold"]}]}],
+   FontSize->18], 
+  StyleBox["\[IndentingNewLine]",
+   FontSize->18,
+   FontWeight->"SemiBold"], "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ StyleBox[
+  RowBox[{
+   RowBox[{"PlotETPF", "=", 
+    RowBox[{"Plot", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"ETPFu", "[", "xx", "]"}], ",", 
+        RowBox[{"ETPFd", "[", "xx", "]"}]}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"xx", ",", "0", ",", "1"}], "}"}], ",", 
+      RowBox[{"Filling", "\[Rule]", "Axis"}]}], "]"}]}], ";", 
+   RowBox[{"PlotETFL", "=", 
+    RowBox[{"Plot", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"ETFLu", "[", "xx", "]"}], ",", 
+        RowBox[{"ETFLd", "[", "xx", "]"}]}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"xx", ",", "0", ",", "1"}], "}"}], ",", 
+      RowBox[{"Filling", "\[Rule]", "Axis"}]}], "]"}]}], ";"}],
+  FontSize->18,
+  FontWeight->"SemiBold"], "\[IndentingNewLine]", 
+ StyleBox[
+  RowBox[{
+   RowBox[{"PlotETt", "=", 
+    RowBox[{"Plot", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"ETu", "[", 
+         RowBox[{"0.1", ",", 
+          RowBox[{"-", "t"}]}], "]"}], ",", 
+        RowBox[{"ETd", "[", 
+         RowBox[{"0.1", ",", 
+          RowBox[{"-", "t"}]}], "]"}]}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"t", ",", "0", ",", "1"}], "}"}], ",", 
+      RowBox[{"Filling", "\[Rule]", "Axis"}]}], "]"}]}], ";"}],
+  FontSize->18,
+  FontWeight->"SemiBold"], "\[IndentingNewLine]", 
+ StyleBox[
+  RowBox[{
+   RowBox[{"PlotETx", "=", 
+    RowBox[{"Plot", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"ETu", "[", 
+         RowBox[{"xx", ",", 
+          RowBox[{"-", "1.0"}]}], "]"}], ",", 
+        RowBox[{"ETd", "[", 
+         RowBox[{"xx", ",", 
+          RowBox[{"-", "1.0"}]}], "]"}]}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"xx", ",", "0", ",", "1"}], "}"}], ",", 
+      RowBox[{"Filling", "\[Rule]", "Axis"}]}], "]"}]}], ";"}],
+  FontSize->18,
+  FontWeight->"SemiBold"]}], "Input",ExpressionUUID->"0ce1e40a-4be2-4859-b0d0-\
+cefa915ca0b4"]
+},
+WindowSize->{808, 905},
+WindowMargins->{{20, Automatic}, {Automatic, 44}},
+FrontEndVersion->"11.2 for Mac OS X x86 (32-bit, 64-bit Kernel) (September \
+10, 2017)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 7019, 254, 620, "Input",ExpressionUUID->"0ce1e40a-4be2-4859-b0d0-cefa915ca0b4"]
+}
+]
+*)
+
+(* End of internal cache information *)
+
